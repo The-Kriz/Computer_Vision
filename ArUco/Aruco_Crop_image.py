@@ -45,7 +45,7 @@ def corrdinates (cordinates_sorted,image,location):
     point_1_3 = arr1[location[1]]
     point_2_3 = arr1[location[2]]
     point_3_3 = arr1[location[3]]
-    return warpPerspectivecrop(point_0_3, point_3_0, point_2_1, point_1_2, image)
+    return Perspective_wrap_crop(point_0_3, point_3_0, point_2_1, point_1_2, image)
     # return warpPerspectivecrop(     BL  ,    TL   ,   TR    ,   BR    , image)
 
 
@@ -88,7 +88,7 @@ while (True):
                     point = arrays[0][j]
                     arr_eachpoint.append(arrays[0][j])
                 cordinates_sorted.append(arr_eachpoint)
-            croped_image = corrdinates(cordinates_sorted,frame,pos,2)
+            croped_image = corrdinates(cordinates_sorted,frame,pos)
 
             cv2.imshow("Croped_image", croped_image)
 
