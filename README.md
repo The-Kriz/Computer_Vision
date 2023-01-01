@@ -11,7 +11,7 @@ An aruco marker is a fiducial marker that is placed on the object or scene being
 
 
 ### Projects:
- [![Aruco_Crop_image](https://custom-icon-badges.herokuapp.com/badge/-perspective%20crop-White?style=for-the-badge&logo=browser&Color=white&color=black)](https://github.com/The-Kriz/Computer_Vision/blob/main/ArUco/Aruco_Crop_image.py)
+ [![Aruco_Crop_image](https://custom-icon-badges.herokuapp.com/badge/-perspective%20crop-White?style=for-the-badge&logo=browser&Color=white&color=black)](https://github.com/The-Kriz/Computer_Vision/blob/main/ArUco_Markers/Aruco_Perspective_Crop_image.py)
  
 <img src="https://user-images.githubusercontent.com/90817926/210171040-a08c16f2-421a-4fb9-ab13-e670cee2b931.png" width="250" /> <img src="https://user-images.githubusercontent.com/90817926/210171115-e7363338-554e-44f0-910a-2eaaa991b36c.png" width="250" />
 
