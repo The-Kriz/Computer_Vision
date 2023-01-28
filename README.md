@@ -29,5 +29,15 @@ Radial distortion causes straight lines to appear curved. Radial distortion beco
 
 ### Projects:
  [![Camera Calibration](https://custom-icon-badges.herokuapp.com/badge/-Camera%20Calibration-White?style=for-the-badge&logo=browser&Color=white&color=black)](https://github.com/The-Kriz/Computer_Vision/tree/main/Camera_Calibration)
- 
 [![Calibrated_Stream](https://custom-icon-badges.herokuapp.com/badge/-Camera%20Calibrated%20Stream-White?style=for-the-badge&logo=browser&Color=white&color=black)](https://github.com/The-Kriz/Computer_Vision/blob/main/Camera_Calibration/Calibrated_Stream.py)
+
+
+## Realtime Pose Estimation
+
+MediaPipe Pose is a ML solution for high-fidelity body pose tracking
+
+<p align="center" >
+<img src="https://user-images.githubusercontent.com/90817926/215265994-0b13e79e-d671-4fe2-8c3a-0302ae9ae8fe.png"/>
+</P>
+
+[![pose classification](https://custom-icon-badges.herokuapp.com/badge/-pose%20classification-White?style=for-the-badge&logo=browser&Color=white&color=black)](https://github.com/The-Kriz/Computer_Vision/tree/main/Realtime_Pose_Estimation)
