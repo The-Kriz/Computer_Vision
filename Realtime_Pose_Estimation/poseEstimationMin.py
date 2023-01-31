@@ -71,6 +71,9 @@ def classifyPose(landmarks, output_image):
 
     x, y, _ = landmarks[mpPose.PoseLandmark.RIGHT_SHOULDER.value]
     output_image = cv2.circle(output_image, (x, y), 1, (0, 255, 0), 5)
+    
+    if ( left_shoulder_angle < 20 and left_shoulder_angle > 10) and (right_shoulder_angle < 100 and right_shoulder_angle > 90 ) and (left_elbow_angle > 250 and left_elbow_angle < 280 ) and (right_elbow_angle > 170 and right_elbow_angle < 195 ):
+        label = "Hitler"
 
     if left_elbow_angle > 165 and left_elbow_angle < 195 and right_elbow_angle > 165 and right_elbow_angle < 195:
         if left_shoulder_angle > 80 and left_shoulder_angle < 110 and right_shoulder_angle > 80 and right_shoulder_angle < 110:
