@@ -24,29 +24,29 @@ def Perspective_wrap_crop(pt_A ,pt_B ,pt_C ,pt_D,img):
 
 
 
-def corrdinates (cordinates_sorted,image,location):
-    arr1 = cordinates_sorted[0]
+def Coordinates(coordinates_sorted, image, location):
+    arr1 = coordinates_sorted[0]
     point_0_0 = arr1[location[0]]
     point_1_0 = arr1[location[1]]
     point_2_0 = arr1[location[2]]
     point_3_0 = arr1[location[3]]
-    arr1 = cordinates_sorted[1]
+    arr1 = coordinates_sorted[1]
     point_0_1 = arr1[location[0]]
     point_1_1 = arr1[location[1]]
     point_2_1 = arr1[location[2]]
     point_3_1 = arr1[location[3]]
-    arr1 = cordinates_sorted[2]
+    arr1 = coordinates_sorted[2]
     point_0_2 = arr1[location[0]]
     point_1_2 = arr1[location[1]]
     point_2_2 = arr1[location[2]]
     point_3_2 = arr1[location[3]]
-    arr1 = cordinates_sorted[3]
+    arr1 = coordinates_sorted[3]
     point_0_3 = arr1[location[0]]
     point_1_3 = arr1[location[1]]
     point_2_3 = arr1[location[2]]
     point_3_3 = arr1[location[3]]
     return Perspective_wrap_crop(point_0_3, point_3_0, point_2_1, point_1_2, image)
-    # return warpPerspectivecrop(     BL  ,    TL   ,   TR    ,   BR    , image)
+    # return Perspective_wrap_crop(     BL  ,    TL   ,   TR    ,   BR    , image)
 
 
 
@@ -80,15 +80,15 @@ while (True):
                 j =0
         print(pos)
         if len(ids) == 4:
-            cordinates_sorted = []
+            coordinates_sorted = []
             for j in range(4):
                 arr_eachpoint = []
                 for id in range(len(ids)):
                     arrays = int_corners[id]
                     point = arrays[0][j]
                     arr_eachpoint.append(arrays[0][j])
-                cordinates_sorted.append(arr_eachpoint)
-            croped_image = corrdinates(cordinates_sorted,frame,pos)
+                coordinates_sorted.append(arr_eachpoint)
+            croped_image = Coordinates(coordinates_sorted,frame,pos)
 
             cv2.imshow("Croped_image", croped_image)
 
